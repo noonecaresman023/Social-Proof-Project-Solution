@@ -20,13 +20,13 @@
 }
 
 body {
-    display: grid;
+    display: flex;
     align-items: center;
     justify-content: center;
     min-height: 100vh;
-    position: relative;
     font-family: 'League Spartan', sans-serif;
     padding: 2em;
+    position: relative;
     background: url(./images/bg-pattern-top-mobile.svg) no-repeat, url(./images/bg-pattern-bottom-mobile.svg) no-repeat;
     background-size: cover;
 }
@@ -96,7 +96,7 @@ main {
 }
 
 /* footer  */
-footer{
+footer {
     display: flex;
     align-items: center;
     justify-content: center;
@@ -106,12 +106,12 @@ footer{
     width: 100%;
     bottom: 0;
     position: absolute;
+    height: 2rem;
+    background-color: transparent;
 }
 
-footer p, a{
-    font-family: 'Lexend Deca', sans-serif; ;
-}
-footer a{
+
+footer a {
     text-decoration: none;
     color: gray;
 }
@@ -126,14 +126,13 @@ footer a{
     /* Laying out grid */
     main {
         max-width: 1170px;
-        margin: 0 auto;
         grid-template-columns: 1fr 1fr 1fr;
         grid-template-rows: 1fr 1fr;
         grid-template-areas:
             "heading rating rating"
             "buyer buyer buyer"
         ;
-        gap: 3em 1em;
+        gap: 2em 1em;
     }
 
     .header-group {
@@ -169,18 +168,18 @@ footer a{
 
     }
 
-    .ratings{
+    .ratings {
         width: 50%;
         margin: 0;
     }
 
     .rating-guru {
-        transform: translate(60px,0);
+        transform: translate(60px, 0);
     }
 
-    .rating-besttech{
+    .rating-besttech {
         align-self: flex-end;
-    }   
+    }
 
     .stars-svg-group {
         display: inline-block;
@@ -199,18 +198,19 @@ footer a{
         gap: 2em;
     }
 
-    .buyers{
+    .buyers {
         margin: 0;
     }
 
-    .buyer-roberts{
+    .buyer-roberts {
         transform: translate(0, 30px);
     }
-    .buyer-wallace{
+
+    .buyer-wallace {
         transform: translate(0, 60px);
     }
 
-    footer{
+    footer {
         font-size: 1em;
     }
 
