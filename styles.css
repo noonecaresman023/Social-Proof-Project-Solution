@@ -24,6 +24,7 @@ body {
     align-items: center;
     justify-content: center;
     min-height: 100vh;
+    position: relative;
     font-family: 'League Spartan', sans-serif;
     padding: 2em;
     background: url(./images/bg-pattern-top-mobile.svg) no-repeat, url(./images/bg-pattern-bottom-mobile.svg) no-repeat;
@@ -102,6 +103,9 @@ footer{
     font-size: .5em;
     gap: 1%;
     top: 100%;
+    width: 100%;
+    bottom: 0;
+    position: absolute;
 }
 
 footer p, a{
